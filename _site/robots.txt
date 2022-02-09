@@ -1,1 +1,1 @@
-Sitemap: azcodes.dev/blog/sitemap.xml
+Sitemap: azcodes.dev/sitemap.xml
