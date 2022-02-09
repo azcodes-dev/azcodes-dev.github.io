@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azmat Mungur</title>
+    <description>Azmat Mungur.</description>
+    <link>azcodes.dev/blog/</link>
+    <atom:link href="azcodes.dev/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 08 Feb 2022 19:10:40 -0500</pubDate>
+    <lastBuildDate>Tue, 08 Feb 2022 19:10:40 -0500</lastBuildDate>
+    <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Features of JMeter and Visual Studio</title>
+        <description>&lt;p&gt;Microsoft had announced during the release of Microsoft Visual Studio 2019 that the Web Performance and Load Test feature is being deprecated and Visual Studio 2019 will be the last one having this feature. For more info, read directly from this &lt;a href=&quot;https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/&quot;&gt;Microsoft Blog&lt;/a&gt;. This announcement had triggered several questions being asked by performance/test engineers and developers who have been using Visual Studio to carry out web performance test development and load testing for years. The most asked question has been&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Which tool should we migrate to?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There are several tools in the market like Apache JMeter, K6, Gatling, Neoload, Blazemeter, Load Runner, and so on.
+However, the most used and having the largest community is the open-sourced Apache JMeter, which is one of the recommended tool by Microsoft.&lt;/p&gt;
+
+&lt;p&gt;Here are some of the concept/terminology of Visual Studio and the equivalent of Apache JMeter.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Visual Studio&lt;/th&gt;
+      &lt;th&gt;JMeter&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Web request&lt;/td&gt;
+      &lt;td&gt;Sampler -&amp;gt; HTTP request&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Headers of web request&lt;/td&gt;
+      &lt;td&gt;Config -&amp;gt; HTTP Header Manager&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Validation rules&lt;/td&gt;
+      &lt;td&gt;Assertions&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Extraction rules&lt;/td&gt;
+      &lt;td&gt;Post processors&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Conditions/Decisions/Loops&lt;/td&gt;
+      &lt;td&gt;Logic controllers -&amp;gt; If, Loop and While controllers&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Transactions&lt;/td&gt;
+      &lt;td&gt;Logic controllers -&amp;gt; Transaction controllers&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Web test&lt;/td&gt;
+      &lt;td&gt;Test fragment&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Call to web test&lt;/td&gt;
+      &lt;td&gt;Logic controllers -&amp;gt; Module controllers&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Context parameters&lt;/td&gt;
+      &lt;td&gt;User defined Variables&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data sources&lt;/td&gt;
+      &lt;td&gt;Config element -&amp;gt; CSV Data Set Config or JDBC request&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Virtual users, Load patterns and duration&lt;/td&gt;
+      &lt;td&gt;Thread Groups setting&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Credentials&lt;/td&gt;
+      &lt;td&gt;Config Element -&amp;gt; HTTP Authorization Manager&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Web test plugins&lt;/td&gt;
+      &lt;td&gt;JSR223 Sampler&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Request plugins&lt;/td&gt;
+      &lt;td&gt;JSR223 Pre/Post processors&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Wed, 13 Jan 2021 11:00:00 -0500</pubDate>
+        <link>azcodes.dev/blog/2021/01/13/Features-of-JMeter4/</link>
+        <guid isPermaLink="true">azcodes.dev/blog/2021/01/13/Features-of-JMeter4/</guid>
+        
+        <category>performanceengineering</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Features of JMeter and Visual Studio</title>
+        <description>&lt;p&gt;Microsoft had announced during the release of Microsoft Visual Studio 2019 that the Web Performance and Load Test feature is being deprecated and Visual Studio 2019 will be the last one having this feature. For more info, read directly from this &lt;a href=&quot;https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/&quot;&gt;Microsoft Blog&lt;/a&gt;. This announcement had triggered several questions being asked by performance/test engineers and developers who have been using Visual Studio to carry out web performance test development and load testing for years. The most asked question has been&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Which tool should we migrate to?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There are several tools in the market like Apache JMeter, K6, Gatling, Neoload, Blazemeter, Load Runner, and so on.
+However, the most used and having the largest community is the open-sourced Apache JMeter, which is one of the recommended tool by Microsoft.&lt;/p&gt;
+
+&lt;p&gt;Here are some of the concept/terminology of Visual Studio and the equivalent of Apache JMeter.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Visual Studio&lt;/th&gt;
+      &lt;th&gt;JMeter&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Web request&lt;/td&gt;
+      &lt;td&gt;Sampler -&amp;gt; HTTP request&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Headers of web request&lt;/td&gt;
+      &lt;td&gt;Config -&amp;gt; HTTP Header Manager&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Validation rules&lt;/td&gt;
+      &lt;td&gt;Assertions&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Extraction rules&lt;/td&gt;
+      &lt;td&gt;Post processors&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Conditions/Decisions/Loops&lt;/td&gt;
+      &lt;td&gt;Logic controllers -&amp;gt; If, Loop and While controllers&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Transactions&lt;/td&gt;
+      &lt;td&gt;Logic controllers -&amp;gt; Transaction controllers&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Web test&lt;/td&gt;
+      &lt;td&gt;Test fragment&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Call to web test&lt;/td&gt;
+      &lt;td&gt;Logic controllers -&amp;gt; Module controllers&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Context parameters&lt;/td&gt;
+      &lt;td&gt;User defined Variables&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data sources&lt;/td&gt;
+      &lt;td&gt;Config element -&amp;gt; CSV Data Set Config or JDBC request&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Virtual users, Load patterns and duration&lt;/td&gt;
+      &lt;td&gt;Thread Groups setting&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Credentials&lt;/td&gt;
+      &lt;td&gt;Config Element -&amp;gt; HTTP Authorization Manager&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Web test plugins&lt;/td&gt;
+      &lt;td&gt;JSR223 Sampler&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Request plugins&lt;/td&gt;
+      &lt;td&gt;JSR223 Pre/Post processors&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Wed, 13 Jan 2021 11:00:00 -0500</pubDate>
+        <link>azcodes.dev/blog/2021/01/13/Features-of-JMeter3/</link>
+        <guid isPermaLink="true">azcodes.dev/blog/2021/01/13/Features-of-JMeter3/</guid>
+        
+        <category>performanceengineering</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Features of JMeter and Visual Studio</title>
+        <description>&lt;p&gt;Microsoft had announced during the release of Microsoft Visual Studio 2019 that the Web Performance and Load Test feature is being deprecated and Visual Studio 2019 will be the last one having this feature. For more info, read directly from this &lt;a href=&quot;https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/&quot;&gt;Microsoft Blog&lt;/a&gt;. This announcement had triggered several questions being asked by performance/test engineers and developers who have been using Visual Studio to carry out web performance test development and load testing for years. The most asked question has been&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Which tool should we migrate to?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There are several tools in the market like Apache JMeter, K6, Gatling, Neoload, Blazemeter, Load Runner, and so on.
+However, the most used and having the largest community is the open-sourced Apache JMeter, which is one of the recommended tool by Microsoft.&lt;/p&gt;
+
+&lt;p&gt;Here are some of the concept/terminology of Visual Studio and the equivalent of Apache JMeter.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Visual Studio&lt;/th&gt;
+      &lt;th&gt;JMeter&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Web request&lt;/td&gt;
+      &lt;td&gt;Sampler -&amp;gt; HTTP request&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Headers of web request&lt;/td&gt;
+      &lt;td&gt;Config -&amp;gt; HTTP Header Manager&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Validation rules&lt;/td&gt;
+      &lt;td&gt;Assertions&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Extraction rules&lt;/td&gt;
+      &lt;td&gt;Post processors&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Conditions/Decisions/Loops&lt;/td&gt;
+      &lt;td&gt;Logic controllers -&amp;gt; If, Loop and While controllers&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Transactions&lt;/td&gt;
+      &lt;td&gt;Logic controllers -&amp;gt; Transaction controllers&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Web test&lt;/td&gt;
+      &lt;td&gt;Test fragment&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Call to web test&lt;/td&gt;
+      &lt;td&gt;Logic controllers -&amp;gt; Module controllers&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Context parameters&lt;/td&gt;
+      &lt;td&gt;User defined Variables&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data sources&lt;/td&gt;
+      &lt;td&gt;Config element -&amp;gt; CSV Data Set Config or JDBC request&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Virtual users, Load patterns and duration&lt;/td&gt;
+      &lt;td&gt;Thread Groups setting&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Credentials&lt;/td&gt;
+      &lt;td&gt;Config Element -&amp;gt; HTTP Authorization Manager&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Web test plugins&lt;/td&gt;
+      &lt;td&gt;JSR223 Sampler&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Request plugins&lt;/td&gt;
+      &lt;td&gt;JSR223 Pre/Post processors&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Wed, 13 Jan 2021 11:00:00 -0500</pubDate>
+        <link>azcodes.dev/blog/2021/01/13/Features-of-JMeter1/</link>
+        <guid isPermaLink="true">azcodes.dev/blog/2021/01/13/Features-of-JMeter1/</guid>
+        
+        <category>performanceengineering</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Features of JMeter and Visual Studio</title>
+        <description>&lt;p&gt;Microsoft had announced during the release of Microsoft Visual Studio 2019 that the Web Performance and Load Test feature is being deprecated and Visual Studio 2019 will be the last one having this feature. For more info, read directly from this &lt;a href=&quot;https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/&quot;&gt;Microsoft Blog&lt;/a&gt;. This announcement had triggered several questions being asked by performance/test engineers and developers who have been using Visual Studio to carry out web performance test development and load testing for years. The most asked question has been&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Which tool should we migrate to?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There are several tools in the market like Apache JMeter, K6, Gatling, Neoload, Blazemeter, Load Runner, and so on.
+However, the most used and having the largest community is the open-sourced Apache JMeter, which is one of the recommended tool by Microsoft.&lt;/p&gt;
+
+&lt;p&gt;Here are some of the concept/terminology of Visual Studio and the equivalent of Apache JMeter.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Visual Studio&lt;/th&gt;
+      &lt;th&gt;JMeter&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Web request&lt;/td&gt;
+      &lt;td&gt;Sampler -&amp;gt; HTTP request&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Headers of web request&lt;/td&gt;
+      &lt;td&gt;Config -&amp;gt; HTTP Header Manager&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Validation rules&lt;/td&gt;
+      &lt;td&gt;Assertions&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Extraction rules&lt;/td&gt;
+      &lt;td&gt;Post processors&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Conditions/Decisions/Loops&lt;/td&gt;
+      &lt;td&gt;Logic controllers -&amp;gt; If, Loop and While controllers&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Transactions&lt;/td&gt;
+      &lt;td&gt;Logic controllers -&amp;gt; Transaction controllers&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Web test&lt;/td&gt;
+      &lt;td&gt;Test fragment&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Call to web test&lt;/td&gt;
+      &lt;td&gt;Logic controllers -&amp;gt; Module controllers&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Context parameters&lt;/td&gt;
+      &lt;td&gt;User defined Variables&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data sources&lt;/td&gt;
+      &lt;td&gt;Config element -&amp;gt; CSV Data Set Config or JDBC request&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Virtual users, Load patterns and duration&lt;/td&gt;
+      &lt;td&gt;Thread Groups setting&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Credentials&lt;/td&gt;
+      &lt;td&gt;Config Element -&amp;gt; HTTP Authorization Manager&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Web test plugins&lt;/td&gt;
+      &lt;td&gt;JSR223 Sampler&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Request plugins&lt;/td&gt;
+      &lt;td&gt;JSR223 Pre/Post processors&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Wed, 13 Jan 2021 11:00:00 -0500</pubDate>
+        <link>azcodes.dev/blog/2021/01/13/Features-of-JMeter/</link>
+        <guid isPermaLink="true">azcodes.dev/blog/2021/01/13/Features-of-JMeter/</guid>
+        
+        <category>performanceengineering</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Features of JMeter and Visual Studio</title>
+        <description>&lt;p&gt;Microsoft had announced during the release of Microsoft Visual Studio 2019 that the Web Performance and Load Test feature is being deprecated and Visual Studio 2019 will be the last one having this feature. For more info, read directly from this &lt;a href=&quot;https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/&quot;&gt;Microsoft Blog&lt;/a&gt;. This announcement had triggered several questions being asked by performance/test engineers and developers who have been using Visual Studio to carry out web performance test development and load testing for years. The most asked question has been&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Which tool should we migrate to?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There are several tools in the market like Apache JMeter, K6, Gatling, Neoload, Blazemeter, Load Runner, and so on.
+However, the most used and having the largest community is the open-sourced Apache JMeter, which is one of the recommended tool by Microsoft.&lt;/p&gt;
+
+&lt;p&gt;Here are some of the concept/terminology of Visual Studio and the equivalent of Apache JMeter.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Visual Studio&lt;/th&gt;
+      &lt;th&gt;JMeter&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Web request&lt;/td&gt;
+      &lt;td&gt;Sampler -&amp;gt; HTTP request&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Headers of web request&lt;/td&gt;
+      &lt;td&gt;Config -&amp;gt; HTTP Header Manager&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Validation rules&lt;/td&gt;
+      &lt;td&gt;Assertions&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Extraction rules&lt;/td&gt;
+      &lt;td&gt;Post processors&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Conditions/Decisions/Loops&lt;/td&gt;
+      &lt;td&gt;Logic controllers -&amp;gt; If, Loop and While controllers&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Transactions&lt;/td&gt;
+      &lt;td&gt;Logic controllers -&amp;gt; Transaction controllers&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Web test&lt;/td&gt;
+      &lt;td&gt;Test fragment&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Call to web test&lt;/td&gt;
+      &lt;td&gt;Logic controllers -&amp;gt; Module controllers&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Context parameters&lt;/td&gt;
+      &lt;td&gt;User defined Variables&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data sources&lt;/td&gt;
+      &lt;td&gt;Config element -&amp;gt; CSV Data Set Config or JDBC request&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Virtual users, Load patterns and duration&lt;/td&gt;
+      &lt;td&gt;Thread Groups setting&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Credentials&lt;/td&gt;
+      &lt;td&gt;Config Element -&amp;gt; HTTP Authorization Manager&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Web test plugins&lt;/td&gt;
+      &lt;td&gt;JSR223 Sampler&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Request plugins&lt;/td&gt;
+      &lt;td&gt;JSR223 Pre/Post processors&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Wed, 13 Jan 2021 11:00:00 -0500</pubDate>
+        <link>azcodes.dev/blog/2021/01/13/Features-of-JMete54/</link>
+        <guid isPermaLink="true">azcodes.dev/blog/2021/01/13/Features-of-JMete54/</guid>
+        
+        <category>performanceengineering</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

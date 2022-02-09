@@ -1,0 +1,125 @@
+/* Hero */
+.hero {
+  position: relative;
+  margin-bottom: 50px;
+  //padding-bottom: 150px;
+  overflow: hidden;
+  background-color: $brand-color;
+  @media only screen and (max-width: $mobile) {
+    box-shadow: none;
+  }
+}
+
+.hero__inner {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: linear-gradient(120deg, rgba(15, 14, 21, 0.5) 100%, $background-color 100%);
+  }
+}
+
+.hero__image {
+  min-height: 450px;
+  user-select: none;
+  background-color: $dark;
+  img {
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media only screen and (max-width: $desktop) {
+    min-height: 300px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    min-height: 300px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    min-height: 300px;
+  }
+}
+
+.hero__content {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  width: 100%;
+  max-width: 650px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 60px;
+  margin: 0 0 10px;
+  line-height: 1;
+  color: $light-gray;
+  @media only screen and (max-width: $mobile) {
+    font-size: 43px;
+    margin: 0 0 5px;
+  }
+}
+
+.hero__desc {
+  font-size: 20px;
+  color: $light-gray;
+  margin: 0;
+  @media only screen and (max-width: $mobile) {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+/* Hero Without Image */
+.hero-without-image {
+  margin: 192px 0 96px;
+  .hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-content {
+    width: 100%;
+    max-width: 650px;
+    padding: 0 20px;
+    text-align: center;
+  }
+  @media only screen and (max-width: $mobile) {
+    margin: 144px 0 48px;
+  }
+}
+
+/* Curve */
+.curve-container__curve {
+  margin-bottom: 0;
+  margin-top: 0;
+  position: relative;
+  display: block;
+  z-index: 100;
+}
+
+.curve__hv-flip .curve-one {
+  margin-top: -1px;
+}
+
+.curve__hv-flip svg {
+  position: relative;
+  //transform: scale(-1);
+  z-index: 5;
+}
+
+.fill- {
+  background-color: $white;
+}
